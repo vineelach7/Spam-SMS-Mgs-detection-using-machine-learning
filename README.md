@@ -86,7 +86,7 @@ To install the requirements, run the commands that would be present in reqiureme
 
    ```bash
    git clone[https://github.com/vineelach7/Spam-SMS-Mgs-detection-using-machine-learning].git
-cd Spam-mgs-detection-using-machine-learning
+   cd Spam-SMS-Mgs-detection-using-machine-learning
    ```
 
 2. **Download Dataset**:
