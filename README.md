@@ -85,8 +85,8 @@ To install the requirements, run the commands that would be present in reqiureme
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/vineelach7/spam-sms-detection.git
-cd spam-sms-detection
+   git clone[https://github.com/vineelach7/Spam-mgs-detection-using-machine-learning].git
+cd Spam-mgs-detection-using-machine-learning
    ```
 
 2. **Download Dataset**:
@@ -94,14 +94,13 @@ cd spam-sms-detection
    - Download the **datasetspam.csv** dataset from [here]([https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset]).
    - Place the `spam.csv` file in the repository folder.
 
-3. **Run the Jupyter Notebook**:
+3.Open the Colab Notebook:
 
-   Open and run the `spam_sms_detection.ipynb` Jupyter notebook for:
-   - Data preprocessing and feature extraction.
-   - Model training and evaluation.
-   - Making predictions.
+Open the spam_sms_detection.ipynb notebook in Google Colab:
 
-4. **Make Predictions**:
+If you haven't uploaded the dataset yet, make sure to upload the dataset spam.csv file.
+Alternatively, you can load the dataset from Google Drive.
+Run the notebook cells to preprocess the data, train the models, and evaluate their performance.
 
 Use the `predict_message()` function to classify new SMS messages:
 
