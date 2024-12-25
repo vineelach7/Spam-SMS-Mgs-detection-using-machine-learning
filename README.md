@@ -1,56 +1,67 @@
-Spam SMS/msgs detection using Machine Learning
+### Spam SMS Detection using Machine Learning
 
-## Introduction
+## Overview
 
-This repo shows a machine learning model to classify SMSes **Spam** vs **Ham (non-spam)**. The following code uses various machine learning classification models, including: - Naive Bayes for classification - Logistic Regression- Support Vector Machines.
+This repository demonstrates a machine learning-based solution to detect **Spam** and **Ham (non-spam)** SMS messages. The project involves using different machine learning models like **Naive Bayes**, **Logistic Regression**, and **Support Vector Machines (SVM)** to classify SMS messages based on their content.
 
-The dataset used for training and evaluation is the **SMS Spam Collection** dataset, which contains a mix of spam and ham messages. The objective is to train the models and evaluate their performance based on accuracy and other relevant metrics.
+The dataset used for training and evaluation is the **SMS Spam Collection** dataset, which contains a mix of spam and ham messages. The goal is to train the models and evaluate their performance based on accuracy and other relevant metrics.
 
 ## Objective
 
-- **Data Preprocessing**: Clean and preprocess the SMS data, including feature extraction using **TF-IDF**.
+- **Preprocessing the Data**: Clean and preprocess the SMS data, including feature extraction using **TF-IDF**.
 - **Training Models**: Train three machine learning models for classification:
   - Naive Bayes (MultinomialNB)
-- Logistic Regression
-- Support Vector Machines (SVM)
-- **Model Evaluation**: Assess each model based on key classification metrics: **Accuracy**, **Precision**, **Recall**, and **F1 Score**.
+  - Logistic Regression
+  - Support Vector Machines (SVM)
+- **Model Evaluation**: Evaluate each model based on key classification metrics: **Accuracy**, **Precision**, **Recall**, and **F1 Score**.
 - **Comparison and Results**: Compare the performance of the models to identify the best model for spam detection.
 
-## Methodology
+## Approach
 
-### Data Cleaning
-- The text data is cleaned by removing unwanted characters, symbols, and stopwords.
+### Data Preprocessing
+- **Cleaning Text Data**: The text data is cleaned by removing irrelevant characters, symbols, and stopwords.
 - **Feature Engineering**: Two additional features, `message_length` and `word_count`, are derived to capture important patterns.
 - **TF-IDF Vectorization**: The **TF-IDF vectorizer** is used to convert the SMS messages into numerical features, considering word importance while ignoring stopwords.
 
 ### Model Training
 1. **Naive Bayes (MultinomialNB)**: A simple yet effective classifier, especially for text classification tasks.
 2. **Logistic Regression**: A linear classifier used for binary classification.
-3. **Support Vector Machines (SVM)**: A very powerful classifier and works very well in high-dimensional spaces.
+3. **Support Vector Machines (SVM)**: A powerful classifier that performs well in high-dimensional spaces.
 
 ### Model Evaluation
-All models will be evaluated on the test dataset with the following metrics:
-- **Accuracy**: The ratio of correct predictions.
-- **Precision**: The ratio of true positives out of all positive predictions.
-- **Recall**: The ratio of true positives out of all actual positive samples.
-- **F1 Score**: Harmonic mean of precision and recall, balanced measure.
+Each model is evaluated on the test dataset using the following metrics:
+- **Accuracy**: The proportion of correct predictions.
+- **Precision**: The proportion of true positive predictions out of all positive predictions.
+- **Recall**: The proportion of true positive predictions out of all actual positive samples.
+- **F1 Score**: The harmonic mean of precision and recall, providing a balanced measure.
 
 ### Results
-- After training and testing the models, **Naive Bayes** performs better than **Logistic Regression** and **SVM** on accuracy and overall performance.
-- **Naive Bayes**: Best model in this experiment, with the highest **accuracy** at 97%.
+- After training and evaluating the models, **Naive Bayes** outperforms both **Logistic Regression** and **SVM** in terms of accuracy and overall performance.
+- **Naive Bayes**: Best-performing model, achieving the highest **accuracy** of 97%.
 
-## Summary of Results
+## Results Summary
 
 | Model                  | Accuracy | Precision | Recall | F1 Score |
 |------------------------|----------|-----------|--------|----------|
 | **Naive Bayes**         | 97%      | 96%       | 98%    | 97%      |
-|| **Logistic Regression** | 94%      | 93%       | 95%    | 94%      |
+| **Logistic Regression** | 94%      | 93%       | 95%    | 94%      |
 | **SVM**                 | 92%      | 90%       | 93%    | 91%      |
 
 ## Challenges Faced
-- **Class Imbalance**: The spam and ham messages are distributed unevenly in the dataset, which required careful handling during training.
-- **Feature Selection**: Choosing the right features and preprocessing steps was vital to achieve good model performance.
+- **Class Imbalance**: The dataset has an unequal distribution of spam and ham messages, which required careful handling during training.
+- **Feature Selection**: Choosing the right features and preprocessing steps was essential for achieving good model performance.
 - **Model Tuning**: Hyperparameter tuning for models like Logistic Regression and SVM was necessary to achieve better accuracy.
+
+## Code Structure
+
+```plaintext
+/spam-sms-detection
+│
+├── spam_sms_detection.ipynb    # Jupyter notebook for model training and evaluation
+├── spam.csv                    # Dataset (SMS messages)
+├── requirements.txt            # List of dependencies
+└── README.md                   # Project documentation
+
 
 ## Code Structure
 
