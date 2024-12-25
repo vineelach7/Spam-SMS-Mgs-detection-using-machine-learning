@@ -52,44 +52,14 @@ Each model is evaluated on the test dataset using the following metrics:
 - **Feature Selection**: Choosing the right features and preprocessing steps was essential for achieving good model performance.
 - **Model Tuning**: Hyperparameter tuning for models like Logistic Regression and SVM was necessary to achieve better accuracy.
 
-## Code Structure
 
-```plaintext
-/spam-sms-detection
-│
-├── spam_sms_detection.ipynb    # Jupyter notebook for model training and evaluation
-├── spam.csv                    # Dataset (SMS messages)
-├── requirements.txt            # List of dependencies
-└── README.md                   # Project documentation
-
-
-## Code Structure
-
-```plaintext
-/spam-sms-detection
-│
-├── spam_sms_detection.ipynb    # Jupyter notebook for model training and evaluation
-├── spam.csv                    # Dataset (SMS messages)
-├── requirements.txt            # List of dependencies
-└── README.md                   # Project documentation
-
-
-## Code Structure
-
-```plaintext
-/spam-sms-detection
-│
-├── spam_sms_detection.ipynb    # Jupyter notebook for model training and evaluation
-├── spam.csv                    # Dataset (SMS messages)
-├── requirements.txt            # List of dependencies
-└── README.md                   # Project documentation
 
 ## File Structure
 
 ```plaintext
 /spam-sms-detection
 │
-├── spam_sms_detection.ipynb    # Jupyter notebook for model training and evaluation
+├── spam_sms_detection(Logistic,SVM,Navie Bayes.ipynb)   # Jupyter notebook for model training and evaluation
 ├── spam.csv                    # Dataset (SMS messages)
 ├── requirements.txt            # List of dependencies
 └── README.md                   # Project documentation
@@ -106,34 +76,22 @@ Each model is evaluated on the test dataset using the following metrics:
 
 ### Required Libraries:
 
-To install the requirements, run the following command:
+To install the requirements, run the commands that would be present in reqiuremets.txt:
 
-```bash
-pip install -r requirements.txt
-```
 
-The `requirements.txt` file should contain the following:
-
-```text
-pandas>=1.1.0
-scikit-learn>=0.24.0
-matplotlib>=3.2.0
-seaborn>=0.11.0
-numpy>=1.19.0
-```
 
 ## Usage
 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/spam-sms-detection.git
+   git clone https://github.com/vineelach7/spam-sms-detection.git
 cd spam-sms-detection
    ```
 
 2. **Download Dataset**:
 
-   - Download the **spam.csv** dataset from [here](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
+   - Download the **datasetspam.csv** dataset from [here]([https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset]).
    - Place the `spam.csv` file in the repository folder.
 
 3. **Run the Jupyter Notebook**:
